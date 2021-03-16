@@ -1,5 +1,5 @@
 package com;
 
 public interface HavingSuperAbility {
-    String superAbilityType();
+    String applySuperAbility(String superAbilityType);
 }

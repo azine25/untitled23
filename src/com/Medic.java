@@ -1,8 +1,10 @@
 package com;
 
-public abstract class Medic extends Hero{
+public class Medic extends Hero implements HavingSuperAbility{
+
+
     @Override
-    public String  superAbilityType() {
-        return "Medic применил суперспособность Medical";
+    public String applySuperAbility(String superAbilityType) {
+        return "Medic применил суперспособность "+ superAbilityType;
     }
 }

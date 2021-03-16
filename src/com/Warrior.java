@@ -1,10 +1,10 @@
 package com;
 
-public abstract class Warrior extends Hero {
+public class Warrior extends Hero implements HavingSuperAbility {
 
     @Override
-    public String superAbilityType() {
-        return "Warrior применил суперспособность Foreage";
+    public String applySuperAbility(String superAbilityType) {
+        return "Warrior применил суперспособность " + superAbilityType;
     }
-
 }
+

@@ -1,9 +1,9 @@
 package com;
 
-public abstract class Magic extends Hero {
+public class Magic extends Hero implements HavingSuperAbility{
 
     @Override
-    public String superAbilityType() {
-        return "Magic применил суперспособность Magical";
+    public String applySuperAbility(String superAbilityType) {
+        return "Magic применил суперспособность " + superAbilityType;
     }
 }
